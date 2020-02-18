@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+    <h1>Add post</h1>
+    <form action="/post/save" method="POST" class="post-form">
+        <label>
+            Enter Title
+            <input name="title" type="text" />
+        </label>
+        <label>
+            Enter Description
+            <textarea name="description"></textarea>
+        </label>
+        <button class="btn-blue">Create post</button>
+    </form>
+{% endblock %}

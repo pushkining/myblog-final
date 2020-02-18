@@ -1,0 +1,82 @@
+header {
+    background: blue;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header-wrap, footer {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 15px auto;
+    min-height: 600px;
+    box-shadow: 0 0 3px 3px #0000005e;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    background: #000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color:#fff;
+}
+
+.btn {
+    background: red;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-blue {
+    background: blue;
+    padding: 5px 25px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.post-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+    box-shadow: 0 0 3px 2px #00000075;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.post-form input, .post-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
