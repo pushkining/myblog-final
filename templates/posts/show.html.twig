@@ -2,5 +2,16 @@
 
 
 {% block body %}
-    <h1>Show post</h1>
+    <h1></h1>
+    
+    <div class="post-list">
+        
+            <div class="post">
+                <i>{{post.dateUpdate}}</i>
+                <p>{{post.description}}</p>
+                <a href="/post/remove{{post.id}}"/>Remove</a>
+            </div>
+    </div>
+    
 {% endblock %}
+

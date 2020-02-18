@@ -11,6 +11,10 @@
                 <h3>{{post.title}}</h3>
                 <i>{{post.dateUpdate}}</i>
                 <p>{{post.description}}</p>
+                
+                <a href="/post/{{post.id}}"/>More...</a>
+                <a href="/post/remove{{post.id}}"/>Remove</a>
+                <a href="/post/edit/{{post.id}}"/>Edit</a>
             </div>
         {% endfor %}
     </div>

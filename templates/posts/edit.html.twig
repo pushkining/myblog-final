@@ -3,4 +3,16 @@
 
 {% block body %}
     <h1>Edit post</h1>
+    <form action="/post/save" method="POST" class="post-form">
+        <input type="hide" name="id" value="{{post.id}}"/>
+        <label>
+            Enter Title
+            <input value="{{post.title}}" name="title" type="text" />
+        </label>
+        <label>
+            Edit Description
+            <textarea name="description">{{post.description}}</textarea>
+        </label>
+        <button class="btn-blue">Update post</button>
+    </form>
 {% endblock %}
